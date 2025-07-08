@@ -14,26 +14,32 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
-      {/* <Hero /> */}
+<section className="relative w-full">
+  <img
+    src="/first.png"
+    alt="Hero"
+    className="w-full h-auto object-cover"
+  />
 
-      <section className="relative flex items-start justify-center w-full h-screen overflow-x-hidden">
-        <img className="absolute ml-10 max-w-full" src="/first.png" alt="Hero" />
+  <div className="absolute inset-0 flex items-center justify-start ml-4 md:ml-13 mt-10 md:mt-77">
+    <button
+      onClick={() =>
+        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+      }
+      className="bg-[#A98141] text-white text-sm sm:text-base lg:text-lg px-5 sm:px-3  mt-14 lg:px-14 py-2 sm:py-2 lg:py-4 rounded font-semibold hover:bg-[#8b6b34] transition"
+    >
+      READ MORE
+    </button>
+  </div>
+</section>
 
-        {/* Button */}
-        <div className="absolute inset-0 flex items-center justify-start ml-4 md:ml-18 mt-20 md:mt-76">
-          <button
-            onClick={() => {
-              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="bg-[#A98141] text-white px-6 md:px-15 py-3 md:py-4 rounded font-semibold hover:bg-[#8b6b34] transition"
-          >
-            READ MORE
-          </button>
-        </div>
-      </section>
+
+
+
+
 
       {/* About Baker’s Inn Section */}
-      <section id="about" className="py-12 md:py-36 px-4 md:px-20">
+      <section id="about" className="py-12 md:py-36 px-4 sm:px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
           <div className="md:flex md:justify-between md:items-start mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-[#2F2160] mb-4 md:mb-0">
@@ -50,7 +56,7 @@ const HomePage: React.FC = () => {
                   answer to hunger’s call.
                 </strong>
               </p>
-              <Link href="/about">
+              <Link href="/about" passHref>
                 <button className="bg-[#A98141] text-white px-5 py-2 rounded font-semibold hover:bg-[#8b6b34] transition">
                   READ MORE
                 </button>
@@ -58,25 +64,25 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          {/* Images Row - flex-wrap added, images max width */}
-          <div className="flex flex-wrap items-center gap-3 mx-6 justify-center">
+          {/* Images Row */}
+          <div className="flex flex-wrap items-center gap-3 mx-2 sm:mx-6 justify-center">
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[250px] sm:max-w-[220px] h-50"
               src="/sandwich.png"
               alt="Sandwich"
             />
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[250px] sm:max-w-[220px] h-50"
               src="/pie.png"
               alt="Pie"
             />
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[250px] sm:max-w-[220px] h-50"
               src="/tea.png"
               alt="Tea"
             />
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[250px] sm:max-w-[220px] h-50"
               src="/bread.png"
               alt="Bread"
             />
@@ -92,32 +98,31 @@ const HomePage: React.FC = () => {
           </h1>
         </div>
 
-        {/* Images flex-wrap + max-width for images */}
-        <div className="flex flex-wrap items-center gap-5 py-10 justify-center mx-6">
+        <div className="flex flex-wrap items-center gap-5 py-10 justify-center mx-2 sm:mx-6">
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[300px] h-48"
+              className="rounded-md object-cover w-full max-w-[400px] sm:max-w-[300px] h-60"
               src="/bread.png"
               alt="Bread"
             />
           </div>
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[300px] h-48"
+              className="rounded-md object-cover w-full max-w-[400px] sm:max-w-[300px] h-60"
               src="/pie.png"
               alt="Pie"
             />
           </div>
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[300px] h-48"
+              className="rounded-md object-cover w-full max-w-[400px] sm:max-w-[300px] h-60"
               src="/scones.png"
               alt="Scones"
             />
           </div>
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[300px] h-48"
+              className="rounded-md object-cover w-full max-w-[400px] sm:max-w-[300px] h-60"
               src="/donuts.png"
               alt="Donuts"
             />
@@ -125,7 +130,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center py-5">
-          <Link href="/contact">
+          <Link href="/contact" passHref>
             <button className="bg-[#A98141] text-white px-5 py-2 rounded font-semibold hover:bg-[#8b6b34] transition">
               VIEW COMPLETE RANGE
             </button>
@@ -134,7 +139,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* BOOK A FACTORY TOUR Section */}
-      <section className="flex flex-col md:flex-row mr-6 md:mr-20 ml-6 md:ml-20 justify-between py-12 md:py-24">
+      <section className="flex flex-col md:flex-row mr-6 md:mr-20 ml-6 md:ml-20 justify-between py-12 md:py-24 px-4 sm:px-6 md:px-10 lg:px-20">
         <div className="mt-12 md:mt-24 mb-8 md:mb-0">
           <h1 className="text-2xl md:text-3xl font-bold text-[#2F2160] mb-4 md:mb-0">
             Book A Factory Tour
@@ -164,7 +169,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* REQUEST A DONATION Section */}
-      <section className="flex flex-col md:flex-row-reverse mr-6 md:mr-20 ml-6 md:ml-20 justify-between py-12 md:py-24">
+      <section className="flex flex-col md:flex-row-reverse mr-6 md:mr-20 ml-6 md:ml-20 justify-between py-12 md:py-24 px-4 sm:px-6 md:px-10 lg:px-20">
         <div className="mt-12 md:mt-24 mb-8 md:mb-0">
           <h1 className="text-2xl md:text-3xl font-bold text-[#2F2160] mb-4 md:mb-0">
             REQUEST A DONATION
@@ -199,8 +204,8 @@ const HomePage: React.FC = () => {
           src="/frame.png"
           alt="Game frame"
         />
-        <div className="absolute inset-0 flex items-center justify-end mr-4 md:mr-57 mt-8">
-          <Link href="/kids-corner">
+        <div className="absolute inset-0 flex items-center justify-center md:justify-end mr-4 md:mr-57 mt-8">
+          <Link href="/kids-corner" passHref>
             <button className="bg-[#d82121] text-white px-6 md:px-10 py-2 md:py-3 rounded font-semibold hover:bg-[#ad1212] transition">
               PLAY GAMES
             </button>
@@ -209,19 +214,21 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Baker’s Recipes Section */}
-      <section>
-        <h2 className="flex justify-center text-2xl md:text-3xl font-bold text-[#2F2160] mb-10 md:mb-15">
-          Baker’s Recipes
-        </h2>
-        <div className="mb-10 md:mb-25">
-          <BasicTabs />
-        </div>
-      </section>
+        <section>
+          <h2 className="flex justify-center text-xl sm:text-2xl md:text-3xl font-bold text-[#2F2160] mb-6 sm:mb-8 md:mb-12">
+            Baker’s Recipes
+          </h2>
+          <div className="mb-8 sm:mb-10 md:mb-20 px-4 sm:px-6 md:px-10 lg:px-20 overflow-x-auto">
+            <BasicTabs />
+          </div>
+        </section>
+
+
 
       {/* Promotions Section */}
       <section>
-        <div className="flex flex-col md:flex-row justify-between bg-[#A98141] mx-4 md:mx-20 py-10 md:py-20">
-          <div className="mb-10 md:mb-0 md:ml-20 mt-10 md:mt-40">
+        <div className="flex flex-col md:flex-row justify-between bg-[#A98141] mx-4 sm:mx-10 md:mx-20 py-10 md:py-20 px-4 sm:px-6 md:px-10 lg:px-20">
+          <div className="mb-10 md:mb-0 md:ml-20 mt-10 md:mt-20">
             <h1 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-0">
               Get Notified about <br /> promotions WE OFFER
             </h1>
@@ -248,8 +255,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-     
-
       {/* Modals */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <DonationModal isOpen={isDonationOpen} onClose={() => setDonationOpen(false)} />
@@ -259,8 +264,6 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
-
 
 
 

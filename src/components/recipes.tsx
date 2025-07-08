@@ -72,7 +72,7 @@ export default function BasicTabs() {
 
       <CustomTabPanel value={value} index={1}>
         <div className="flex justify-center gap-5">
-          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
+          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageWidth} />
           <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
           <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
         </div>

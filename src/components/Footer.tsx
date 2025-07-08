@@ -1,3 +1,117 @@
+import React from 'react';
+import Image from 'next/image';
+import {
+  FaPhone,
+  FaEnvelope,
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+} from 'react-icons/fa';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-[#2D0F50] text-white py-12 px-4 sm:px-6 font-sans mt-20">
+      {/* Logo */}
+      <div className="w-full flex items-center justify-center mb-10">
+        <div className="flex w-full items-center">
+          <div className="flex-grow border-t border-white opacity-30"></div>
+          <div className="px-6">
+            <Image src="/footer-logo.png" alt="Footer Logo" width={100} height={100} />
+          </div>
+          <div className="flex-grow border-t border-white opacity-30"></div>
+        </div>
+      </div>
+
+      {/* Grid Sections */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 max-w-7xl mx-auto mb-12 text-center lg:text-left">
+        {/* Instagram Feed */}
+        <div>
+          <h4 className="text-lg font-bold mb-4">Instagram Feed</h4>
+          <div className="grid grid-cols-3 gap-3 justify-center">
+            <Image src="/footer-pic1.png" alt="Instagram Image 1" width={100} height={100} className="w-full h-auto" />
+            <Image src="/footer-pic2.png" alt="Instagram Image 2" width={100} height={100} className="w-full h-auto" />
+            <Image src="/footer-pic3.png" alt="Instagram Image 3" width={100} height={100} className="w-full h-auto" />
+          </div>
+        </div>
+
+        {/* Location */}
+        <div>
+          <h4 className="text-lg font-bold mb-4">Our Location</h4>
+          <p className="text-sm">1 Shepperton Road,</p>
+          <p className="text-sm">Graniteside,<br />Harare</p>
+          <p className="text-sm">Zimbabwe</p>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h4 className="text-lg font-bold mb-4">Get In Touch With Us</h4>
+          <div className="space-y-2 text-sm">
+            <p className="flex items-center justify-center lg:justify-start gap-2">
+              <FaPhone /> 08080151 / 08080152
+            </p>
+            <p className="flex items-center justify-center lg:justify-start gap-2">
+              <FaPhone /> +263 242 751 481 / 710 334
+            </p>
+            <p className="flex items-center justify-center lg:justify-start gap-2">
+              <FaEnvelope />
+              <a href="mailto:marketing@bakersinnzim.com" className="hover:underline">
+                marketing@bakersinnzim.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        {/* Sitemap */}
+        <div>
+          <h4 className="text-lg font-bold mb-4">Sitemap</h4>
+          <ul className="space-y-1 text-sm">
+            <li><a href="#" className="hover:underline">Home</a></li>
+            <li><a href="#" className="hover:underline">About Us</a></li>
+            <li><a href="#" className="hover:underline">Products</a></li>
+            <li><a href="#" className="hover:underline">Recipes</a></li>
+            <li><a href="#" className="hover:underline">Kids Corner</a></li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Social Media */}
+      <div className="flex justify-center lg:justify-start gap-6 text-xl mb-8">
+        <a href="#" aria-label="Twitter" className="hover:text-gray-300"><FaTwitter /></a>
+        <a href="#" aria-label="Facebook" className="hover:text-gray-300"><FaFacebookF /></a>
+        <a href="#" aria-label="LinkedIn" className="hover:text-gray-300"><FaLinkedinIn /></a>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-700 pt-6 text-sm flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto text-center gap-3 px-4">
+        <div className="flex items-center gap-2">
+          Subsidiary of
+          <Image src="/inscor.png" alt="Inscor Logo" width={50} height={30} />
+        </div>
+        <div>© {currentYear} Bakers Inn. All rights reserved.</div>
+        <div>
+          Site by{' '}
+          <a
+            href="https://www.nowalls.africa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            NoWalls Pan Africa
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+
+
+
 // import React from 'react';
 // import Image from 'next/image';
 // import { FaPhone, FaEnvelope, FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
@@ -93,145 +207,3 @@
 // };
 
 // export default Footer;
-
-import React from 'react';
-import Image from 'next/image';
-import {
-  FaPhone,
-  FaEnvelope,
-  FaTwitter,
-  FaFacebookF,
-  FaLinkedinIn,
-} from 'react-icons/fa';
-
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-[#2D0F50] text-white py-12 px-6 font-sans mt-30 ml-3">
-      {/* Logo */}
-      <div className="w-full flex items-center justify-center mb-10">
-        <div className="flex w-full items-center">
-          <div className="flex-grow border-t border-white opacity-30"></div>
-
-          <div className="px-6">
-            <Image
-              src="/footer-logo.png"
-              alt="Footer Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-
-          <div className="flex-grow border-t border-white opacity-30"></div>
-        </div>
-      </div>
-
-      {/* Grid Sections */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto mb-12">
-        {/* Instagram Feed */}
-        <div>
-          <h4 className="text-lg font-bold mb-4">Instagram Feed</h4>
-          <div className="grid grid-cols-3 gap-3">
-            <Image
-              src="/footer-pic1.png"
-              alt="Instagram Image 1"
-              width={100}
-              height={100}
-              className="w-full h-auto"
-            />
-            <Image
-              src="/footer-pic2.png"
-              alt="Instagram Image 2"
-              width={100}
-              height={100}
-              className="w-full h-auto"
-            />
-            <Image
-              src="/footer-pic3.png"
-              alt="Instagram Image 3"
-              width={100}
-              height={100}
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-
-        {/* Location */}
-        <div className="ml-20">
-          <h4 className="text-lg font-bold mb-4">Our Location</h4>
-          <p className="text-sm">1 Shepperton Road,</p>
-          <p className="text-sm">
-            Graniteside,<br /> Harare
-          </p>
-          <p className="text-sm">Zimbabwe</p>
-        </div>
-
-        {/* Contact Info */}
-        <div className="ml-22">
-          <h4 className="text-lg font-bold mb-4">Get In Touch With Us</h4>
-          <div className="space-y-1 text-sm">
-            <p className="flex items-center gap-2">
-              <FaPhone /> 08080151 <br />08080152
-            </p>
-            <p className="flex items-center gap-2">
-              <FaPhone /> +263 242 751 481 <br /> +263 242 710 334
-            </p>
-            <p className="flex items-center gap-2">
-              <FaEnvelope />
-              <a href="mailto:marketing@bakersinnzim.com" className="hover:underline">
-                marketing@bakersinnzim.com
-              </a>
-            </p>
-          </div>
-        </div>
-
-        {/* Sitemap */}
-        <div className="ml-45">
-          <h4 className="text-lg font-bold mb-4">Sitemap</h4>
-          <ul className="space-y-1 text-sm">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Products</a></li>
-            <li><a href="#" className="hover:underline">Recipes</a></li>
-            <li><a href="#" className="hover:underline">Kids Corner</a></li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Social Media */}
-      <div className="flex justify-start gap-6 text-xl mb-8 ml-3">
-        <a href="#" aria-label="Twitter" className="hover:text-gray-300"><FaTwitter /></a>
-        <a href="#" aria-label="Facebook" className="hover:text-gray-300"><FaFacebookF /></a>
-        <a href="#" aria-label="LinkedIn" className="hover:text-gray-300"><FaLinkedinIn /></a>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-700 pt-6 text-sm flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto text-center md:text-left gap-3">
-        <div className="flex items-center gap-2">
-          Subsidiary of
-          <Image
-            src="/inscor.png"
-            alt="Inscor Logo"
-            width={50}
-            height={30}
-          />
-        </div>
-        <div>© {currentYear} Bakers Inn. All rights reserved.</div>
-        <div>
-          Site by{' '}
-          <a
-            href="https://www.nowalls.africa/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            NoWalls Pan Africa
-          </a>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
