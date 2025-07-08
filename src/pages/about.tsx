@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer'; // Adjust path to your actual Footer
+
 
 const AboutPage: React.FC = () => {
   return (

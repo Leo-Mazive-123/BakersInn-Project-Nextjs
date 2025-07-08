@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import Hero from '../components/Hero';
 import BasicTabs from '@/components/recipes';
 import Link from 'next/link';
 import Modal from '../components/Modal';

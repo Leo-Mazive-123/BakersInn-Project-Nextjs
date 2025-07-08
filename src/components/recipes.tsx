@@ -1,7 +1,10 @@
-import * as React from 'react';
+'use client';
+
+import React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Image from 'next/image';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -39,37 +42,48 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
+  const imageWidth = 320;
+  const imageHeight = 240;
+
   return (
-      <Box  sx={{ width: '100%' }}>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"centered >
-          <Tab label="For Kids" {...a11yProps(0)} sx={{ fontSize: '16px', color:'#2F2160', fontWeight: 'bold' }}  />
-          <Tab label="For Vegans" {...a11yProps(1)} sx={{ fontSize: '16px', color:'#2F2160', fontWeight: 'bold' }}   />
-          <Tab label="For Family" {...a11yProps(2)} sx={{ fontSize: '16px', color:'#2F2160', fontWeight: 'bold' }} />
-       </Tabs>
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+          textColor="primary"
+          indicatorColor="primary"
+        >
+          <Tab label="For Kids" {...a11yProps(0)} sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }} />
+          <Tab label="For Vegans" {...a11yProps(1)} sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }} />
+          <Tab label="For Family" {...a11yProps(2)} sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }} />
+        </Tabs>
       </Box>
 
       <CustomTabPanel value={value} index={0}>
-        <div className='flex justify-center gap-5'>
-          <img className='w-80' src="shwarma.png" alt="" /> 
-          <img className='w-80' src="shwarma.png" alt="" /> 
-          <img className='w-80' src="shwarma.png" alt="" />
+        <div className="flex justify-center gap-5">
+          <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight} />
+          <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight} />
+          <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight} />
         </div>
-         
       </CustomTabPanel>
+
       <CustomTabPanel value={value} index={1}>
-        <div className='flex justify-center gap-5'>
-          <img className='w-80' src="shortbread.png" alt="" /> 
-          <img className='w-80' src="shortbread.png" alt="" /> 
-          <img className='w-80' src="shortbread.png" alt="" /> 
+        <div className="flex justify-center gap-5">
+          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
+          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
+          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
         </div>
       </CustomTabPanel>
+
       <CustomTabPanel value={value} index={2}>
-       <div className='flex justify-center gap-5'>
-          <img className='w-80' src="salmon.png" alt="" /> 
-          <img className='w-80' src="salmon.png" alt="" /> 
-          <img className='w-80' src="salmon.png" alt="" /> 
-       </div>
+        <div className="flex justify-center gap-5">
+          <Image src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
+          <Image src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
+          <Image src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
+        </div>
       </CustomTabPanel>
     </Box>
   );

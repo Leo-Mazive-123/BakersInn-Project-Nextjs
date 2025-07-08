@@ -96,7 +96,13 @@
 
 import React from 'react';
 import Image from 'next/image';
-import {FaPhone,FaEnvelope,FaTwitter,FaFacebookF,FaLinkedinIn,} from 'react-icons/fa';
+import {
+  FaPhone,
+  FaEnvelope,
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+} from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -105,43 +111,64 @@ const Footer = () => {
     <footer className="bg-[#2D0F50] text-white py-12 px-6 font-sans mt-30 ml-3">
       {/* Logo */}
       <div className="w-full flex items-center justify-center mb-10">
-  <div className="flex w-full items-center">
-    <div className="flex-grow border-t border-white opacity-30"></div>
+        <div className="flex w-full items-center">
+          <div className="flex-grow border-t border-white opacity-30"></div>
 
-    <div className="px-6">
-      <Image src="/footer-logo.png" alt="Logo" width={100} height={100} />
-    </div>
+          <div className="px-6">
+            <Image
+              src="/footer-logo.png"
+              alt="Footer Logo"
+              width={100}
+              height={100}
+            />
+          </div>
 
-    <div className="flex-grow border-t border-white opacity-30"></div>
-  </div>
-</div>
-
-
+          <div className="flex-grow border-t border-white opacity-30"></div>
+        </div>
+      </div>
 
       {/* Grid Sections */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto mb-12">
         {/* Instagram Feed */}
         <div>
           <h4 className="text-lg font-bold mb-4">Instagram Feed</h4>
-            <div className="grid grid-cols-3 gap-3">
-             {/* Replace with actual image paths and dynamic fetching */}
-             <img className="w-full h-auto " src="/footer-pic1.png" />
-             <img className="w-full h-auto " src="/footer-pic2.png"/>
-             <img className="w-full h-auto " src="/footer-pic3.png"/>
-
+          <div className="grid grid-cols-3 gap-3">
+            <Image
+              src="/footer-pic1.png"
+              alt="Instagram Image 1"
+              width={100}
+              height={100}
+              className="w-full h-auto"
+            />
+            <Image
+              src="/footer-pic2.png"
+              alt="Instagram Image 2"
+              width={100}
+              height={100}
+              className="w-full h-auto"
+            />
+            <Image
+              src="/footer-pic3.png"
+              alt="Instagram Image 3"
+              width={100}
+              height={100}
+              className="w-full h-auto"
+            />
           </div>
         </div>
 
         {/* Location */}
-        <div className='ml-20'>
+        <div className="ml-20">
           <h4 className="text-lg font-bold mb-4">Our Location</h4>
           <p className="text-sm">1 Shepperton Road,</p>
-          <p className="text-sm">Graniteside,<br /> Harare</p>
+          <p className="text-sm">
+            Graniteside,<br /> Harare
+          </p>
           <p className="text-sm">Zimbabwe</p>
         </div>
 
         {/* Contact Info */}
-        <div className='ml-22'>
+        <div className="ml-22">
           <h4 className="text-lg font-bold mb-4">Get In Touch With Us</h4>
           <div className="space-y-1 text-sm">
             <p className="flex items-center gap-2">
@@ -160,7 +187,7 @@ const Footer = () => {
         </div>
 
         {/* Sitemap */}
-        <div className='ml-45'>
+        <div className="ml-45">
           <h4 className="text-lg font-bold mb-4">Sitemap</h4>
           <ul className="space-y-1 text-sm">
             <li><a href="#" className="hover:underline">Home</a></li>
@@ -183,8 +210,12 @@ const Footer = () => {
       <div className="border-t border-gray-700 pt-6 text-sm flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto text-center md:text-left gap-3">
         <div className="flex items-center gap-2">
           Subsidiary of
-          <img src="inscor.png"  width={50}   height={10}  />
-         
+          <Image
+            src="/inscor.png"
+            alt="Inscor Logo"
+            width={50}
+            height={30}
+          />
         </div>
         <div>© {currentYear} Bakers Inn. All rights reserved.</div>
         <div>
