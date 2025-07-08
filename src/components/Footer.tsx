@@ -109,7 +109,7 @@ const Footer = () => {
     <div className="flex-grow border-t border-white opacity-30"></div>
 
     <div className="px-6">
-      <img src="footer-logo.png" width={100} height={100} />
+      <Image src="/footer-logo.png" alt="Logo" width={100} height={100} />
     </div>
 
     <div className="flex-grow border-t border-white opacity-30"></div>

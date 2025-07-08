@@ -97,28 +97,28 @@ const HomePage: React.FC = () => {
         <div className="flex flex-wrap items-center gap-5 py-10 justify-center mx-6">
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[300px] h-48"
               src="/bread.png"
               alt="Bread"
             />
           </div>
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[300px] h-48"
               src="/pie.png"
               alt="Pie"
             />
           </div>
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[300px] h-48"
               src="/scones.png"
               alt="Scones"
             />
           </div>
           <div>
             <img
-              className="rounded-md object-cover w-full max-w-[200px] h-48"
+              className="rounded-md object-cover w-full max-w-[300px] h-48"
               src="/donuts.png"
               alt="Donuts"
             />
@@ -241,7 +241,7 @@ const HomePage: React.FC = () => {
 
           <div className="flex justify-center md:justify-end">
             <img
-              className="w-full max-w-[300px] h-auto mr-0 md:mr-10"
+              className="w-full max-w-[400px] h-auto mr-0 md:mr-10"
               src="zvingwa.png"
               alt="Zvingwa"
             />

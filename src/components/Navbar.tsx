@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         <Link href="/about">About Us</Link>
         <Link href="/products">Products</Link>
         <Link href="/recipes">Recipes</Link>
-        <Link href="/kids-corner">Kid's Corner</Link>
+        <Link href="/kids-corner">Kids Corner</Link>
         <Link href="/contact">
           <span className="ml-4 bg-[#A98141] text-white px-4 py-2 rounded hover:bg-[#8b6b34] transition">
             CONTACT US
