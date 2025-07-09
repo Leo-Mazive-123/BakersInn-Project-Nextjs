@@ -60,36 +60,62 @@ export default function BasicTabs() {
       </Box>
 
       <CustomTabPanel value={value} index={0}>
-        <div className="flex justify-center gap-5">
-          <Image src="/loaf1.png" alt="Bread Loaf 1" width={imgWidth} height={imgHeight} />
-          <Image src="/loaf2.png" alt="Bread Loaf 2" width={imgWidth} height={imgHeight} />
-          <Image src="/loaf3.png" alt="Bread Loaf 3" width={imgWidth} height={imgHeight} />
+        {/* Added justify-center on large screens */}
+        <div className="flex gap-5 overflow-x-auto sm:overflow-visible px-2 sm:px-0 snap-x snap-mandatory scroll-smooth justify-start sm:justify-center">
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/loaf1.png" alt="Bread Loaf 1" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/loaf2.png" alt="Bread Loaf 2" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/loaf3.png" alt="Bread Loaf 3" width={imgWidth} height={imgHeight} />
+          </div>
         </div>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={1}>
-        <div className="flex justify-center gap-5">
-          <Image src="/pie1.png" alt="Meat Pie 1" width={imgWidth} height={imgHeight} />
-          <Image src="/pie2.png" alt="Meat Pie 2" width={imgWidth} height={imgHeight} />
-          <Image src="/pie3.png" alt="Meat Pie 3" width={imgWidth} height={imgHeight} />
+        <div className="flex gap-5 overflow-x-auto sm:overflow-visible px-2 sm:px-0 snap-x snap-mandatory scroll-smooth justify-start sm:justify-center">
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/pie1.png" alt="Meat Pie 1" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/pie2.png" alt="Meat Pie 2" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/pie3.png" alt="Meat Pie 3" width={imgWidth} height={imgHeight} />
+          </div>
         </div>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
-        <div className="flex justify-center gap-5">
-          <Image src="/scone1.png" alt="Scone 1" width={imgWidth} height={imgHeight} />
-          <Image src="/scone2.png" alt="Scone 2" width={imgWidth} height={imgHeight} />
-          <Image src="/scone3.png" alt="Scone 3" width={imgWidth} height={imgHeight} />
+        <div className="flex gap-5 overflow-x-auto sm:overflow-visible px-2 sm:px-0 snap-x snap-mandatory scroll-smooth justify-start sm:justify-center">
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/scone1.png" alt="Scone 1" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/scone1.png" alt="Scone 1" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/scone1.png" alt="Scone 1" width={imgWidth} height={imgHeight} />
+          </div>
         </div>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={3}>
-        <div className="flex justify-center gap-5">
-          <Image src="/donut1.png" alt="Donut 1" width={imgWidth} height={imgHeight} />
-          <Image src="/donut2.png" alt="Donut 2" width={imgWidth} height={imgHeight} />
-          <Image src="/donut3.png" alt="Donut 3" width={imgWidth} height={imgHeight} />
+        <div className="flex gap-5 overflow-x-auto sm:overflow-visible px-2 sm:px-0 snap-x snap-mandatory scroll-smooth justify-start sm:justify-center">
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/donut1.png" alt="Donut 1" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/donut2.png" alt="Donut 2" width={imgWidth} height={imgHeight} />
+          </div>
+          <div className="flex-shrink-0 snap-start">
+            <Image src="/donut1.png" alt="Donut 1" width={imgWidth} height={imgHeight} />
+          </div>
         </div>
       </CustomTabPanel>
     </Box>
   );
 }
+

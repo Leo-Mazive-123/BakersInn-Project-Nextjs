@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link'; // <-- Import Link here
 import {
   FaPhone,
   FaEnvelope,
@@ -67,11 +68,31 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-bold mb-4">Sitemap</h4>
           <ul className="space-y-1 text-sm">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Products</a></li>
-            <li><a href="#" className="hover:underline">Recipes</a></li>
-            <li><a href="#" className="hover:underline">Kids Corner</a></li>
+            <li>
+              <Link href="/" className="hover:underline">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:underline">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/products" className="hover:underline">
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link href="/recipes" className="hover:underline">
+                Recipes
+              </Link>
+            </li>
+            <li>
+              <Link href="/kids-corner" className="hover:underline">
+                Kids Corner
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -107,6 +128,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

@@ -56,35 +56,60 @@ export default function BasicTabs() {
           textColor="primary"
           indicatorColor="primary"
         >
-          <Tab label="For Kids" {...a11yProps(0)} sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }} />
-          <Tab label="For Vegans" {...a11yProps(1)} sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }} />
-          <Tab label="For Family" {...a11yProps(2)} sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }} />
+          <Tab
+            label="For Kids"
+            {...a11yProps(0)}
+            sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }}
+          />
+          <Tab
+            label="For Vegans"
+            {...a11yProps(1)}
+            sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }}
+          />
+          <Tab
+            label="For Family"
+            {...a11yProps(2)}
+            sx={{ fontSize: '16px', color: '#2F2160', fontWeight: 'bold' }}
+          />
         </Tabs>
       </Box>
 
       <CustomTabPanel value={value} index={0}>
-        <div className="flex justify-center gap-5">
-          <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight} />
-          <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight} />
-          <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight} />
+        <div className="overflow-x-auto">
+          <div className="flex gap-5 min-w-max justify-center">
+           
+            <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight}/>
+            <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight}/>
+            <Image src="/shwarma.png" alt="Shwarma dish for kids" width={imageWidth} height={imageHeight}/>
+                       
+          </div>
         </div>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={1}>
-        <div className="flex justify-center gap-5">
-          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageWidth} />
-          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
-          <Image src="/shortbread.png" alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight} />
+        <div className="overflow-x-auto">
+          <div className="flex gap-5 min-w-max justify-center">
+            
+            <Image src="/shortbread.png"  alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight}/>             
+            <Image src="/shortbread.png"  alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight}/>             
+            <Image src="/shortbread.png"  alt="Shortbread vegan recipe" width={imageWidth} height={imageHeight}/>             
+           
+         </div>
         </div>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
-        <div className="flex justify-center gap-5">
-          <Image src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
-          <Image src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
-          <Image src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
+        <div className="overflow-x-auto">
+          <div className="flex gap-5 min-w-max justify-center">
+          
+            <Image  src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
+            <Image  src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />
+            <Image  src="/salmon.png" alt="Salmon family recipe" width={imageWidth} height={imageHeight} />             
+          
+          </div>
         </div>
       </CustomTabPanel>
     </Box>
   );
 }
+
