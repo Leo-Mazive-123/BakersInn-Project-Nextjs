@@ -3,7 +3,7 @@ import BasicTabs from '@/components/products';
 
 const Products: React.FC = () => {
   return (
-    <main className="p-4">
+    <main className="p-4 bg-white">
       {/* Relative container with fixed height for desktop, smaller for mobile */}
       <div className="relative w-full h-60 sm:h-[540px]">
         {/* Image fills container */}

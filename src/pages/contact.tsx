@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactPage: React.FC = () => {
   return (
-    <main>
+    <main className='bg-white'>
       {/* Hero Section */}
       <div className="relative w-full h-[300px] sm:h-[400px] md:h-[540px]">
         <img

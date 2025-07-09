@@ -5,7 +5,7 @@ import BasicTabs from '@/components/recipes';
 
 const Recipes: React.FC = () => {
   return (
-    <main className="px-4 sm:px-6 lg:px-16">
+    <main className="px-4 sm:px-6 lg:px-16 bg-white">
       {/* Hero Section */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10 lg:mt-20">
         {/* Text Content */}

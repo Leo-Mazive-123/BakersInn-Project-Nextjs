@@ -62,7 +62,7 @@ const gameSections: GameSection[] = [
 
 const KidsCorner: React.FC = () => {
   return (
-    <main>
+    <main className='bg-white'>
       {/* Hero Banner */}
       <div>
         <Image

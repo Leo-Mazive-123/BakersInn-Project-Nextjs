@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       <main className="flex-grow">
         {/* Section 1: Hero Image */}
         <div className="relative w-full h-[300px] sm:h-[400px] md:h-[540px]">
