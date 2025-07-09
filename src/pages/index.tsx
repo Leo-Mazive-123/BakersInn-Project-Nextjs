@@ -14,29 +14,24 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
-<section className="relative w-full">
-  <img
-    src="/first.png"
-    alt="Hero"
-    className="w-full h-auto object-cover"
-  />
+        <section className="relative w-full">
+          <img
+            src="/first.png"
+            alt="Hero"
+            className="w-full h-auto object-cover"
+          />
 
-  <div className="absolute inset-0 flex items-center justify-start ml-4 md:ml-13 mt-10 md:mt-77">
-    <button
-      onClick={() =>
-        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
-      }
-      className="bg-[#A98141] text-white text-sm sm:text-base lg:text-lg px-5 sm:px-3  mt-14 lg:px-14 py-2 sm:py-2 lg:py-4 rounded font-semibold hover:bg-[#8b6b34] transition"
-    >
-      READ MORE
-    </button>
-  </div>
-</section>
-
-
-
-
-
+          <div className="absolute inset-0 flex items-center justify-start ml-4 md:ml-13 mt-10 md:mt-77">
+            <button
+              onClick={() =>
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className="bg-[#A98141] text-white text-sm sm:text-base text-[7px] lg:text-lg px-5 sm:px-3  mt-35  lg:px-14 mb-17 py-2 sm:py-2 lg:py-4 rounded font-semibold hover:bg-[#8b6b34] transition"
+            >
+              READ MORE
+            </button>
+          </div>
+        </section>
 
       {/* About Baker’s Inn Section */}
       <section id="about" className="py-12 md:py-36 px-4 sm:px-6 md:px-20">

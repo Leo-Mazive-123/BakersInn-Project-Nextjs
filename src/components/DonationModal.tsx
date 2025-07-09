@@ -100,10 +100,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 <div className="w-full">
                   <select className="w-full border bg-[#f1eded] border-gray-300 px-4 py-2">
                     <option>Intended Use of Donation</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>5</option>
+                    <option>Event</option>
+                    <option>Food Distribution</option>
+                    <option>Charitable Program</option>
+                    <option>Fundraising</option>
+                    <option>Other</option>
                   </select>
                 </div>
               </div>
@@ -122,10 +123,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 <div className="w-full">
                   <select className="w-full border bg-[#f1eded] border-gray-300 px-4 py-2">
                     <option>What Products Are Specifically Looking For?</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>5</option>
+                    <option>Baked Goods</option>
+                    <option>Ingredients</option>
+                    <option>Specialty Items</option>
+                    
                   </select>
                 </div>
               </div>
