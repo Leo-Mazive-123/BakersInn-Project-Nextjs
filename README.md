@@ -1,40 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🧁 Baker's Inn Website
 
-## Getting Started
+Welcome to the official website project for **Baker's Inn**, a modern, visually appealing, and fully responsive platform built with **Next.js**, **Tailwind CSS**, and **TypeScript**. This site captures the warmth, creativity, and quality that Baker’s Inn brings to every product.
 
-First, run the development server:
+---
 
-```bash
+## 🌐 Live Demo
+
+👉 [View Live Website](https://bakers-inn-project-nextjs-git-master-leo-mazives-projects.vercel.app)  
+
+
+
+## 🧱 Key Features
+
+- ✅ **Multi-Page Navigation**: Home, About Us, Products, Recipes, Kid’s Corner
+- 🎨 **Pixel-Perfect UI**: Responsive design with Tailwind's utility-first CSS
+- 🌗 **Dark Mode Toggle** (optional)
+- 🔍 **SEO Friendly** with semantic HTML
+- ⚡ **Blazing Fast Performance** thanks to Next.js SSR and optimizations
+- 🧩 **Reusable Components**: Modular and clean codebase
+- 📱 **Fully Responsive** across mobile, tablet, and desktop
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech        | Description                             |
+|-------------|-----------------------------------------|
+| Next.js     | React Framework with SSR and routing    |
+| Tailwind CSS| Utility-first styling for rapid UI dev  |
+| TypeScript  | Typed JS for better scalability         |
+| React Icons | Icons for UI enhancement                |
+
+---
+
+## 📂 Folder Structure
+
+bakers-inn/
+├── public/
+│ └── images/ # All images and assets
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Each Next.js page
+│ │ ├── index.tsx # Home
+│ │ ├── about.tsx
+│ │ ├── products.tsx
+│ │ ├── recipes.tsx
+│ │ └── kids-corner.tsx
+│ ├── styles/ # Global styles if any
+│ └── app/ # Next.js app directory
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
+
+
+
+## 🚀 Getting Started
+
+To run this project locally:
+
+1. **Clone the repository**
+
+git clone https://github.com/your-username/bakers-inn.git
+cd bakers-inn
+
+Install dependencies
+
+npm install
+
+Start the dev server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser at http://localhost:3000 🚀
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📦 Deployment
+This project is production-ready and easily deployable on:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Vercel (Recommended)
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Netlify
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+GitHub Pages (with custom setup)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🙌 Acknowledgments
+Thanks to Tailwind CSS for fast styling.
 
-## Learn More
+Inspired by the vibrant and community-driven spirit of Baker’s Inn Zimbabwe.
 
-To learn more about Next.js, take a look at the following resources:
+Icons by React Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+👨‍💻 Author
+Leo Mazive
+Full Stack Developer | Passionate about building scalable and intuitive digital experiences
+📧 [leomazive01@gmail.com]
+🌍 Your Portfolio or GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
