@@ -92,5 +92,5 @@ Icons by React Icons
 Leo Mazive
 Full Stack Developer | Passionate about building scalable and intuitive digital experiences
 📧 [leomazive01@gmail.com]
-🌍 Your Portfolio or GitHub
+
 
